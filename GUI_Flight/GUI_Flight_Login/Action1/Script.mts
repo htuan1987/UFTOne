@@ -1,6 +1,8 @@
-﻿'display environment variables, can be viewed in File/Settings.../Environment'
+﻿'display built-in environment variables, can be viewed in File/Settings.../Environment'
 msgbox environment("ProductName")
 msgbox environment("ProductVer")
+'can define user-defined variables to use with UFT: for example URL = www.google.com.vn'
+'systemutil.Run "C:\Program Files\Google\Chrome\Application\chrome.exe", environment.Value("URL")'
 
 'use datatable method importsheet to retrieve data from excel file: test.xlsx sheet number 2 to Global UFT Data sheets'
 datatable.ImportSheet "C:\Users\Administrator\UFTtest\test.xlsx",2,"Action1"
