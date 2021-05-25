@@ -27,3 +27,6 @@ WpfWindow("Micro Focus MyFlight Sample").WpfButton("OK").Click @@ hightlight id_
 WpfWindow("Micro Focus MyFlight Sample").Close
 'next command instructs the loop to continue
 Next
+Browser("https://www.w3schools.com/xml/").Page("https://www.w3schools.com/xml/").WebElement("</author>").Click
+
+
